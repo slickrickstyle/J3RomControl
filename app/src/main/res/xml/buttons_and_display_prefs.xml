@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+  <PreferenceCategory android:title="Mokee Listview Animations">
+     <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/listview_animation_entries" android:title="Listview animation" android:key="listview_animation" android:summary="%s" android:dependency="listview_animation" android:defaultValue="0" android:entryValues="@array/listview_animation_values" />
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/listview_interpolator_entries" android:title="Listview interpolator" android:key="listview_interpolator" android:summary="%s" android:dependency="listview_interpolator" android:defaultValue="0" android:entryValues="@array/listview_interpolator_values" />
+   </PreferenceCategory>
+</PreferenceScreen>

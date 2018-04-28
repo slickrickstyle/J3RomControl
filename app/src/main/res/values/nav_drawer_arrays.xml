@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--/*      Created by Roberto Mariani and Anna Berkovitch, 2015-2016
-        This program is free software: you can redistribute it and/or modify
-        it under the terms of the GNU General Public License as published by
-        the Free Software Foundation, either version 3 of the License, or
-        (at your option) any later version.
 
-        This program is distributed in the hope that it will be useful,
-        but WITHOUT ANY WARRANTY; without even the implied warranty of
-        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-        GNU General Public License for more details.
-
-        You should have received a copy of the GNU General Public License
-        along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
 <resources>
     <!--The following array is for icons you want to use for your items
     You can create new icons bu right clicking the drawable folder and choosing
@@ -24,10 +12,15 @@
 
     MAKE SURE THE ITEMS IN ALL 3 ARRAYS CORRESPOND IN ORDER AND ALL 3 ARRAYS ARE SAME LENGTH-->
     <array name="nav_menu_prefs_drawables">
-        <item>@drawable/ic_system_ui</item>
-        <item>@drawable/ic_phone</item>
-        <item>@drawable/ic_framework</item>
+        <item>@drawable/ic_statusbar</item>
         <item>@drawable/ic_notification_panel</item>
+        <item>@drawable/ic_display</item>
+    <!--    <item>@drawable/ic_phone</item>
+        <item>@drawable/ic_framework</item>
+        <item>@drawable/ic_lock</item>
+        <item>@drawable/ic_general</item>
+        <item>@drawable/ic_power</item> -->
+        <item>@drawable/ic_extras</item>
     </array>
 
 
@@ -35,10 +28,15 @@
     Use @string reference, so later on your app can be translated with ease
     KEEP THE ORDER BETWEEN ALL YOUR ARRAYS-->
     <string-array name="nav_menu_prefs_titles">
-        <item>@string/systemui_prefs</item>
-        <item>@string/phone_prefs</item>
-        <item>@string/framework_prefs</item>
+        <item>@string/statusbar_prefs</item>
         <item>@string/notification_panel_prefs</item>
+           <item>@string/buttons_and_display_prefs</item>
+    <!--    <item>@string/phone_prefs</item>
+        <item>@string/framework_prefs</item>
+        <item>@string/lockscreen_prefs</item>
+        <item>@string/general_prefs</item>
+        <item>@string/extended_power_menu_prefs</item>  -->
+        <item>@string/app_links_prefs</item>
     </string-array>
 
 
@@ -47,9 +45,14 @@
     Here you put the file names of the preference files you create in your xml directory
     THEY MUST BE PRECISE AND CASE SENSITIVE!!! DO NOT ADD .xml SUFFIX-->
     <string-array name="nav_menu_xml_file_names" translatable="false">
-        <item>ui_prefs</item>
-        <item>phone_prefs</item>
-        <item>framework_prefs</item>
+         <item>statusbar_prefs</item>
         <item>notification_panel_prefs</item>
+          <item>buttons_and_display_prefs</item>
+    <!--  <item>phone_prefs</item>
+        <item>framework_prefs</item>
+        <item>lockscreen_prefs</item>
+        <item>general_prefs</item>
+        <item>extended_power_menu_prefs</item> -->
+        <item>app_links_prefs</item>
     </string-array>
 </resources>

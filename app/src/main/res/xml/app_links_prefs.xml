@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Application Settings" />
+    <PreferenceScreen android:icon="@drawable/adaway" android:title="AdAway Ad Blocker" android:summary="Enable or Disable Ad Blocking">
+        <intent android:targetPackage="org.adaway" android:targetClass="org.adaway.ui.BaseActivity" />
+    </PreferenceScreen>
+    <PreferenceScreen android:icon="@drawable/greenify" android:title="Greenify" android:key="com.oasisfeng.greenify.GreenifyActivity" android:summary="Hibernate Apps with Greenify" />
+    <PreferenceScreen android:icon="@drawable/su" android:title="SuperSu" android:key="eu.chainfire.supersu.MainActivity" android:summary="Root Access Control" />
+    <PreferenceScreen android:icon="@drawable/wiz" android:title="WizIconizer" android:key="com.wiziconizer.HomeActivity" android:summary="TouchWiz Icon Changer" />
+    <PreferenceScreen android:icon="@drawable/toolbox" android:title="Note 5 Toolbox" android:key="mobi.xperiacle.s5toolbox.addon.ToolboxActivity" android:summary="Choose and select apps to be included on Toolbox." />
+    <PreferenceScreen android:icon="@drawable/upms" android:title="UPSM Manager" android:key="mobi.xperiacle.upsm.manager.MainActivity" android:summary="Enable extra apps for Ultra Power Save Mode" />
+</PreferenceScreen>

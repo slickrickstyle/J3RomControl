@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceScreen android:title="Header Preferences" android:summary="Everything at the top">
+        <PreferenceCategory android:title="Header Preferences" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Header global color" android:key="np_global_toggle" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Pulldown Global Color" android:key="np_global_color" android:summary="Choose global color" android:dependency="np_global_toggle" android:defaultValue="-1" hexValue="true" alphaSlider="true" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Header Background Color" android:key="header_bg_color" android:summary="Choose color to apply" android:defaultValue="-16734780" hexValue="true" alphaSlider="true" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Analog Clock" android:key="change_expanded_clock" android:defaultValue="false" android:summaryOn="Analog Clock currently displayed" android:summaryOff="Digital Clock currently displayed" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Digital Clock Color" android:key="pulldown_clock_color" android:summary="Change pulldown clock color" android:defaultValue="-1" hexValue="true" alphaSlider="true" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/custom_date" android:title="Dateview Style" android:key="custom_date" android:summary="Select your date format" android:defaultValue="4" android:entryValues="@array/custom_date_values" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Date Color" android:key="pulldown_date_color" android:summary="Choose date color in pulldown" android:defaultValue="-1" hexValue="true" alphaSlider="true" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Hide Dateview" android:key="pulldown_date_view" android:defaultValue="false" android:summaryOn="Dateview is hidden" android:summaryOff="Dateview is shown" />
+        <com.wubydax.romcontrol.v2.prefs.FilePreference android:title="Change Toggle EDIT Icon to Text" android:key="modcfg_edit_icon_enable" android:defaultValue="false" android:summaryOn="EDIT is being shown-STOCK Toggles ONLY" android:summaryOff="ICON is being shown" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Settings Button Color" android:key="pulldown_button_color" android:summary="Choose color to apply" android:defaultValue="-1" hexValue="true" alphaSlider="true" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/sysbar_recent" android:title="Custom Third Button" android:key="third_button" android:summary="%s" android:defaultValue="0" android:entryValues="@array/sysbar_recent_values" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Third Button Color" android:key="third_button_color" android:summary="Choose color to apply" android:defaultValue="-1" hexValue="true" alphaSlider="true" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Main Body Options" android:summary="Slider, notifications, etc..">
+    <PreferenceCategory android:title="Blur Effect on Notification Background"/>
+		<com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:defaultValue="false"  android:key="blur_hide_not" android:summaryOff="Deactivate" android:summaryOn="Activate" android:title="Blur Notification" />
+    <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference app:minValue="0" app:maxValue="20" app:unitsValue="10"    android:defaultValue="2"    android:key="blur_degree_noti"   android:title="Blur Degree" />
+    <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference app:minValue="0" app:maxValue="250" app:unitsValue="125" android:key="bg_blur_noti"     android:title="Background Opacity" />
+    <PreferenceCategory android:title="Blur on Recent Panel Background"/>
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference  android:defaultValue="false"  android:key="blur_hide_recent"  android:summaryOff="Deactivate"  android:summaryOn="Activate"  android:title="Blur Recent Panel" />
+    <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference  app:minValue="0" app:maxValue="20" app:unitsValue="�"  android:defaultValue="2"  android:key="blur_degree_recent"  android:title="Blur Degree" />
+    <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference  app:minValue="0" app:maxValue="250" app:unitsValue="�"  android:key="bg_blur_recent"  android:title="Background Opacity" />
+    </PreferenceScreen>
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Brightness Slider Background" android:key="slider_bg_color" android:summary="Set background color" android:defaultValue="-16734780" hexValue="true" alphaSlider="true" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Brightness Slider" android:key="notification_panel_brightness_adjustment" android:defaultValue="true" android:summaryOn="Slider is currently shown" android:summaryOff="Slider is hidden" />
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Quickconnect Panel" android:key="quick_connect_toggle" android:defaultValue="true" android:summaryOn="Panel is shown" android:summaryOff="Panel is hidden" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Quickconnect Background Color" android:key="sfinder_bg_color" android:summary="Choose color to apply" android:defaultValue="-14979440" hexValue="true" alphaSlider="true" />
+    <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Clear Button Color" android:key="clear_button_color" android:summary="Choose color to apply" android:defaultValue="-1" hexValue="true" alphaSlider="false" />
+    <PreferenceScreen android:title="Notification Panel Carrier Text" android:summary="Text options and settings">
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Use Custom Carrier Text" android:key="panel_custom_carrier" android:defaultValue="false" android:summaryOn="Enabled" android:summaryOff="Disabled" />
+        <com.wubydax.romcontrol.v2.prefs.MyEditTextPreference android:title="Carrier Custom Text" android:key="panel_carrier_label" android:summary="Leave BLANK to remove" android:dependency="panel_custom_carrier" android:defaultValue="MOAR ROM" android:dialogTitle="Set Custom Text" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Carrier Text" android:key="panel_carrier_color" android:summary="Choose carrier color" android:defaultValue="-1" hexValue="true" alphaSlider="true" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Toggle Settings" android:summary="Colors, number of, text, etc">
+        <PreferenceCategory android:title="General Toggle Options" />
+        <com.wubydax.romcontrol.v2.prefs.FilePreference android:title="Enable Custom Toggles" android:key="modcfg_toggle_color_enable" android:defaultValue="false" android:summaryOn="Option enabled" android:summaryOff="Option disabled" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/toggle_type" android:title="Choose Toggle Style" android:key="custom_toggles" android:summary="%s" android:dependency="modcfg_toggle_color_enable" android:defaultValue="0" android:entryValues="@array/toggle_type_values" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Toggle Color" android:key="toggle_on_color" android:summary="Set custom toggle color" android:dependency="modcfg_toggle_color_enable" android:defaultValue="-5379328" hexValue="true" alphaSlider="true" />
+        <com.wubydax.romcontrol.v2.prefs.ThumbnailListPreference android:title="Choose Toggle Background" android:key="toggle_background" android:defaultValue="0" app:drawableArray="@array/toggle_bg_drawables" app:entryList="@array/toggle_bg_entries" app:entryValuesList="@array/toggle_bg_values" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Toggle Panel Color" android:key="toggle_bg_color" android:summary="Choose color to apply" android:defaultValue="-16734780" hexValue="true" alphaSlider="true" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Show Toggle Text" android:key="toggle_text" android:defaultValue="true" android:summaryOn="Text will be shown" android:summaryOff="Text will be hidden" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Toggle Text Color" android:key="toggle_text_color" android:summary="Set text color" android:defaultValue="-1" hexValue="true" alphaSlider="true" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/toggle_entries" android:title="Visible Toggles Shown" android:key="toggle_number" android:summary="Number shown on screen" android:defaultValue="5" android:entryValues="@array/toggle_values" />
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/toggle_scroll_entries" android:title="Scrollable Toggles Shown" android:key="notification_panel_active_number_of_apps" android:summary="Scrolling toggle number" android:defaultValue="10" android:entryValues="@array/toggle_scroll_values" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Device Info" android:summary="Choose info to be displayed">
+        <PreferenceCategory android:title="Information" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Device Info" android:key="device_info" android:defaultValue="true" android:summaryOn="Device Info currently removed" android:summaryOff="Currently shown" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Device Info Category Color" android:key="device_info_color" android:summary="Choose color" android:defaultValue="-1" hexValue="true" alphaSlider="false" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Device Information Color" android:key="device_info_color2" android:summary="Choose color" android:defaultValue="-1" hexValue="true" alphaSlider="false" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Notifications prefs">
+        <com.wubydax.romcontrol.v2.prefs.MyListPreference android:entries="@array/shape_entries" android:title="Notification bg shape" android:key="notification_background_form" android:defaultValue="0" android:entryValues="@array/shape_values" />
+        <com.wubydax.romcontrol.v2.prefs.MySeekBarPreference android:title="Notification background transparency" android:key="notification_bg_alpha" android:defaultValue="255" app:maxValue="255" />
+        <com.wubydax.romcontrol.v2.prefs.MySwitchPreference android:title="Custom notificationColors" android:key="custom_notification_color" android:defaultValue="0" android:summaryOn="Custom colors enabled" android:summaryOff="Custom colors disabled" />
+        <com.wubydax.romcontrol.v2.prefs.ColorPickerPreference android:title="Notification bg color" android:key="notification_bg_color" android:dependency="custom_notification_color" android:defaultValue="0" />
+    </PreferenceScreen>
+</PreferenceScreen>
+

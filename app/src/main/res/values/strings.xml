@@ -1,18 +1,6 @@
-<!--/*      Created by Roberto Mariani and Anna Berkovitch, 2015-2016-->
-    <!--This program is free software: you can redistribute it and/or modify-->
-    <!--it under the terms of the GNU General Public License as published by-->
-    <!--the Free Software Foundation, either version 3 of the License, or-->
-    <!--(at your option) any later version.-->
 
-    <!--This program is distributed in the hope that it will be useful,-->
-    <!--but WITHOUT ANY WARRANTY; without even the implied warranty of-->
-    <!--MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the-->
-    <!--GNU General Public License for more details.-->
-
-    <!--You should have received a copy of the GNU General Public License-->
-    <!--along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
 <resources>
-    <string name="app_name">Rom Control</string>
+    <string name="app_name">J3RomControl</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -68,6 +56,24 @@
     <string name="select_all">Select all</string>
     <string name="debloat_rom_menu_title">Debloat rom</string>
     <string name="select_all_label">All</string>
-
+    <string name="ui_prefs">SystemUI prefs</string>
+    <string name="statusbar_prefs">Statusbar prefs</string>
+    <string name="lockscreen_prefs">Lockscreen prefs</string>
+    <string name="general_prefs">General prefs</string>
+    <string name="extended_power_menu_prefs">Extended Power menu</string>
+    <string name="buttons_and_display_prefs">Button and Display</string>
+    <string name="app_links_prefs">App links</string>
+    <string name="dynamic_status_bar_title">Dynamic status bar</string>
+    <string name="dynamic_status_bar_color_title">Dynamic status bar color</string>
+    <string name="dynamic_status_bar_color_summary">Automatically update background color of the status bar</string>
+    <string name="dynamic_status_bar_gradient_title">Gradient</string>
+    <string name="dynamic_status_bar_gradient_summary">Overlay a gradient on the status bar</string>
+    <string name="dynamic_status_bar_filter_title">Darkening</string>
+    <string name="dynamic_status_bar_filter_summary">Overlay a darkening filter on the status bar</string>
+    <string name="dsb_gradient_filter_value_0">Off</string>
+    <string name="dsb_gradient_filter_value_1">Only on the desktop</string>
+    <string name="dsb_gradient_filter_value_2">Everywhere except the desktop</string>
+    <string name="dsb_gradient_filter_value_3">On</string>
+    <string name="dynamic_status_bar_filter_value">The intensity of the darkening filter</string>
     <!--These strings are to set the default fragment to open for the first time the app launches-->
 </resources>
